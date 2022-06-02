@@ -14,7 +14,7 @@ int main(void)
 	 *
 	 */
 
-	char *text = "Programming is like building a multilingual puzzle\0";
+	char *text = "\"Programming is like building a multilingual puzzle\0";
 
 	puts(text);
 	return (0);
