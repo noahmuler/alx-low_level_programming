@@ -1,19 +1,13 @@
 #include <stdio.h>
 
-/*
- * Progrma to print th following:
- * Programming is like building a multilingual puzzle
+/**
+ * main - Entry Point
+ *r
+ * Return: Always 0 (Success)
  *
  */
-
 int main(void)
 {
-	/*
-	 * This function calls puts function
-	 * to desplay a string value held in pointer text
-	 *
-	 */
-
 	char *text = "\"Programming is like building a multilingual puzzle\0";
 
 	puts(text);
