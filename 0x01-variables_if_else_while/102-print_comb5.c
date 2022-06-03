@@ -22,7 +22,7 @@ int main(void)
 			{
 				for (dig4 = '0'; dig4 <= '9'; dig4++)
 				{
-					if ((dig2 != dig4) && (dig2 < dig4))
+					if ((dig2 != dig4) && (dig2 < dig4) && (dig1 <= dig3))
 					{
 						putchar(dig1);
 						putchar(dig2);
