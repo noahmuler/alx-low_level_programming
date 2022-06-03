@@ -29,6 +29,10 @@ int main(void)
 						putchar(' ');
 						putchar(dig3);
 						putchar(dig4);
+					}
+					if (!(dig1 == '9' && dig2 == '8' && dig3 == '9' && dig4 == '9')
+						&& (dig2 != dig4) && (dig2 < dig4) && (dig1 <= dig3))
+					{
 						putchar(',');
 						putchar(' ');
 					}
