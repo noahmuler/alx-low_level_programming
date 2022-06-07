@@ -3,7 +3,6 @@
 /**
  * jack_bauer - Entry point
  *
- * @n: passed as int
  * Return: Always 0 (Success)
  */
 void jack_bauer(void)
