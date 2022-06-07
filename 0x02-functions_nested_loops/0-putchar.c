@@ -11,7 +11,7 @@ int main(void)
 	char pr[] = "_putchar\n";
 	int i = 0;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 9; i++)
 	{
 		if (_putchar(pr[i]) == 1)
 			continue;
