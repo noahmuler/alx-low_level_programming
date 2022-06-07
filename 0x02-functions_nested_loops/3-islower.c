@@ -2,6 +2,7 @@
 /**
  * _islower - Entry point
  *
+ * @c: char passed as int
  * Return: Always 0 (Success)
  */
 int _islower(int c)
