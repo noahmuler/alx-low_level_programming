@@ -15,7 +15,7 @@ int main(void)
 		if (n % 3 == 0 || n % 5 == 0)
 			sum += n;
 		else
-			continue
+			continue;
 	}
 	printf("%d\n", sum);
 }
