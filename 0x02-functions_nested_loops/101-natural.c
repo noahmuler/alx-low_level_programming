@@ -14,7 +14,7 @@ int main(void)
 	for (n = 1024; n <= 1; n--)
 	{
 		if (n % 3 == 0 || n % 5 == 0)
-			sum += n;
+			sum = sum + n;
 		else
 			continue;
 	}
