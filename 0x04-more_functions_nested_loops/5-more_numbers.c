@@ -3,11 +3,12 @@
 /**
  * more_numbers - function called
  *
- * Return: 0 or 1
+ * Return: void
  */
 void more_numbers(void)
 {
-	int i, j = 0;
+	int i; 
+	int j = 0;
 
 	while (j < 10)
 	{
