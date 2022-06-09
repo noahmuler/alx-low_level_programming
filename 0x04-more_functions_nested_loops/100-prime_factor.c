@@ -2,17 +2,15 @@
 #include <math.h>
 
 /**
- * main - func main
+ * main - function main for entry
  *
- * getMaxPrimeFactor - max factor finding function
- *
- * @n: int arg
  * Return: 0
  */
 
-int getMaxPrimeFactor(unsigned long n)
+int main(void)
 {
 	int i, max = -1;
+	unsigned long n = 612852475143;
 
 	while (n % 2 == 0)
 	{
@@ -31,10 +29,6 @@ int getMaxPrimeFactor(unsigned long n)
 	{
 		max = n;
 	}
-	return (max);
-}
-int main(void)
-{
-	printf("%d\n", getMaxPrimeFactor(612852475143));
+	printf("%d\n", max);
 	return (0);
 }
