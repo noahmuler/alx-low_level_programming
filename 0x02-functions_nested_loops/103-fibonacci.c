@@ -9,8 +9,8 @@
 
 int main(void)
 {
-	long int fib = 0, fib2 = 1, addfib;
-	float total = 0;
+	unsigned long int fib = 0, fib2 = 1, addfib;
+	float total;
 
 	while (1)
 	{
@@ -18,7 +18,7 @@ int main(void)
 		if (addfib > 4000000)
 			break;
 
-		if ((fib % 2) == 0)
+		if ((addfib % 2) == 0)
 			total = total + addfib;
 		fib = fib2;
 		fib2 = addfib;
