@@ -16,7 +16,7 @@ int main(void)
 	for (n = 0; n < 92; n++)
 	{
 		addfib = fib + fib2;
-		printf("%lu", addfib);
+		printf("%lu, ", addfib);
 		fib = fib2;
 		fib2 = addfib;
 	}
