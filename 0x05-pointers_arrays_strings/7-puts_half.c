@@ -12,9 +12,9 @@ void puts_half(char *str)
 
 	if ((strlen(str) % 2) == 0)
 		for (i = (strlen(str) / 2); i < strlen(str); i++)
-			puts(str[i]);
+			_putchar(str[i]);
 	else
 		for (i = ((strlen(str) - 1) / 2); i < strlen(str); i++)
-			puts(str[i]);
+			_putchar(str[i]);
 	printf("\n");
 }
