@@ -9,13 +9,19 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *S, *tmp;
-	unsigned int size;
+	unsigned int size, l1, l2;
 
 	if (!s1)
 		s1 = "";
-	else if (!s2)
+	else
+		l1 = strlen(s1);
+
+	if (!s2)
 		s2 = "";
-	size = strlen(s1) + strlen(s2) + 1;
+	else
+		l2 = strlen(s2);
+
+	size = l1 + l2 + 1;
 	S = (char *) malloc(size * sizeof(char));
 	if (S == NULL)
 		return (NULL);
