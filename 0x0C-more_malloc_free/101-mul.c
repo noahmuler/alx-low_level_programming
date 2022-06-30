@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * pow - power math function
+ * _pow - power math function
  * @base: int
  * @exp: int
  * Return: int
@@ -49,7 +49,7 @@ long int convert(long int n)
 int main(int argc, char *argv[])
 {
 	unsigned long mul;
-	int i, j;
+	int i, j, binary[32];
 	long int a, b;
 
 	if (argc != 3)
@@ -71,6 +71,13 @@ int main(int argc, char *argv[])
 	a = convert(atol(argv[1]));
 	b = convert(atol(argv[2]));
 	mul = a * b;
-	printf("%lu\n", mul);
+	for (i = 0; mul > 0; )
+	{
+		binary[i++] = mul % 2;
+		mul /= 2;
+	}
+	for (j = i - 1; j >= 0; j--)
+		printf("%d", binary[j]);
+	printf("\n");
 	return (0);
 }
