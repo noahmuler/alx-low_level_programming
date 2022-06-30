@@ -1,5 +1,45 @@
 #include "main.h"
+/**
+ * pow - power math function
+ * @base: int
+ * @exp: int
+ * Return: int
+ */
+int _pow(int base, int exp)
+{
+	int result;
 
+	if (exp < 0)
+		return (-1);
+	result = 1;
+	while (exp)
+	{
+		if (exp & 1)
+			result *= base;
+	exp >>= 1;
+	base *= base;
+	}
+	return (result);
+}
+/**
+ * convert - long binary to int
+ * @n: unsinged long
+ * Return: int
+ */
+long int convert(long int n)
+{
+	int dec = 0, rem;
+	double i = 0;
+
+	while (n != 0)
+	{
+	rem = n % 10;
+	n /= 10;
+	dec += rem * _pow(2, i);
+	++i;
+	}
+	return (dec);
+}
 /**
  * main - multiplies two positive numbers
  * @argc: number of arguments
@@ -10,7 +50,7 @@ int main(int argc, char *argv[])
 {
 	unsigned long mul;
 	int i, j;
-	unsigned long a, b;
+	long int a, b;
 
 	if (argc != 3)
 	{
@@ -28,8 +68,8 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-	a = atol(argv[1]);
-	b = atol(argv[2]);
+	a = convert(atol(argv[1]));
+	b = convert(atol(argv[2]));
 	mul = a * b;
 	printf("%lu\n", mul);
 	return (0);
