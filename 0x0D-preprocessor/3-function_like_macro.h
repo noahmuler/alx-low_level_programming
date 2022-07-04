@@ -4,14 +4,9 @@
 #include "3-function_like_macro.h"
 /**
  * ABS - absoulte value
- * @x: double arg
+ * @X: double arg
  * Return: double
  */
-double ABS(double x)
-{
-	if (x < 0)
-		return ((-1) * (x));
-	else
-		return (x);
-}
+#define ABS(X)	((X) < 0 ? -1 * (X) : (X))
+
 #endif
