@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if (a == NULL || b == NULL || o == NULL)
+	if (!a || !b || !o)
 	{
 		printf("Error\n");
 		exit(98);
