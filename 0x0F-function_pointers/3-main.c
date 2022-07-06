@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	int a = atoi(argv[1]), b = atoi(argv[3]), result;
 	int (*func)(int, int);
-	char o = *argv[2];
+	char o;
 
 	if (argc != 4)
 	{
@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
+	o = *argv[2];
 	if ((o == '/' || o == '%') && b == 0)
 	{
 		printf("Error\n");
