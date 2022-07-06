@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((o == '/' || o == '%') && arg2 == 0)
+	if ((o == '/' || o == '%') && b == 0)
 	{
 		printf("Error\n");
 		exit(100);
