@@ -8,7 +8,6 @@
 int main(int argc, char *argv[])
 {
 	int a = atoi(argv[1]), b = atoi(argv[3]), result, (*func)(int, int);
-	char o = *argv[2];
 
 	if (argc != 4)
 	{
@@ -22,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if (!a || !b || !o)
+	if (!argv[1] || !argv[3] || !argv[2])
 	{
 		printf("Error\n");
 		exit(98);
