@@ -1,7 +1,6 @@
 #ifndef _3_calc_h
 #define _3_calc_h
 
-#include "3-calc.h"
 #include "function_pointers.h"
 /**
  * struct op - Struct op
