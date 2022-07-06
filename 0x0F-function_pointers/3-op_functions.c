@@ -37,7 +37,10 @@ int op_mul(int a, int b)
  */
 int op_div(int a, int b)
 {
-	return ((a) / (b));
+	if (b)
+		return ((a) / (b));
+	printf("Error\n");
+	exit(100);
 }
 /**
  * op_mod - returns the remainder of a over b
@@ -47,5 +50,8 @@ int op_div(int a, int b)
  */
 int op_mod(int a, int b)
 {
-	return ((a) % (b));
+	if (b)
+		return ((a) % (b));
+	printf("Error\n");
+	exit(100);
 }
