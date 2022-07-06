@@ -22,10 +22,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	if ((o == '/' || o == '%') && b == 0)
+	if (a == NULL || b == NULL || o == NULL)
 	{
 		printf("Error\n");
-		exit(100);
+		exit(98);
 	}
 	result = func(a, b);
 	printf("%d\n", result);
