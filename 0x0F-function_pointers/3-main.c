@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	result = (*get_op_func(*(argv + 2)))(a, b);
+	result = (*get_op_func(argv[2]))(a, b);
 	printf("%d\n", result);
 	return (0);
 }
