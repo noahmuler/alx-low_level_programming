@@ -8,18 +8,13 @@
 int main(int argc, char *argv[])
 {
 	int a = atoi(argv[1]), b = atoi(argv[3]), result, (*func)(int, int);
-	char o = *argv[2];
 
 	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if ((o == '/' || o == '%') && b == 0)
-	{
-		printf("Error\n");
-		exit(100);
-	}
+
 	func = get_op_func(argv[2]);
 	if (!func)
 	{
