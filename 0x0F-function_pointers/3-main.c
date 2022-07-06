@@ -8,6 +8,7 @@
 int main(int argc, char *argv[])
 {
 	int a = atoi(argv[1]), b = atoi(argv[3]), result, (*func)(int, int);
+	char o = *argv[2];
 
 	if (argc != 4)
 	{
@@ -20,6 +21,11 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(99);
+	}
+	if ((o == '/' || o == '%') && arg2 == 0)
+	{
+		printf("Error\n");
+		exit(100);
 	}
 	result = func(a, b);
 	printf("%d\n", result);
