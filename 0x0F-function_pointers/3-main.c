@@ -7,7 +7,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int a = atoi(argv[1]), b = atoi(argv[3]), result, (*func)(int, int);
+	int a = atoi(argv[1]), b = atoi(argv[3]), result;
+	int (*func)(int, int);
 	char o = *argv[2];
 
 	if (argc != 4)
